@@ -15,6 +15,10 @@ import Quotes from './Quotes';
 
 const Dashboard = () => {
 
+    useEffect(() => {
+        document.title = 'Dashboard - Revive';
+      }, []);
+
     const handleStretchButtonClick = () => {
         setLogs((prevLogs) => [
             ...prevLogs,

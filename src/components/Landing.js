@@ -6,6 +6,10 @@ import { Box, Button, Link, Flex, Heading, useTheme } from '@chakra-ui/react';
 
 const Landing = () => {
 
+    useEffect(() => {
+        document.title = 'Revive';
+      }, []);
+
     const [headerText, setHeaderText] = useState("refreshing");
     const [showText, setShowText] = useState(true);
 
