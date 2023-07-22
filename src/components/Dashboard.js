@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./Header";
 import {
-    Box, Button, Text, Flex, Heading, Image, ButtonGroup, Fade, Alert, AlertIcon, CloseButton, AlertDialog,
+    Box, Button, Text, Flex, Heading, ButtonGroup, AlertDialog,
     AlertDialogOverlay,
     AlertDialogContent,
     AlertDialogHeader,
@@ -9,7 +9,6 @@ import {
     AlertDialogFooter
 } from '@chakra-ui/react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { CookiesProvider, useCookies } from "react-cookie";
 import Stretches from './Stretches';
 import Quotes from './Quotes';
 
@@ -111,7 +110,7 @@ const Dashboard = () => {
                 px='10vw'
                 gap={10}
             >
-                <Box flex={1} p={4} bgColor='blackAlpha.200' borderRadius={10}>
+                <Box flex={1} p={10} bgColor='blackAlpha.200' borderRadius={10}>
                     <Heading size="3xl">
                         It is {currentTime}
                     </Heading>
@@ -152,7 +151,7 @@ const Dashboard = () => {
                         )}
                     </AnimatePresence>
                 </Box>
-                <Box flex={1} p={4} bgColor='blackAlpha.200' borderRadius={10}>
+                <Box flex={1} p={10} bgColor='blackAlpha.200' borderRadius={10}>
                     <Text fontSize="xl" as='b'>My progress:</Text>
                     <Box mt={4} maxHeight="120px" overflowY="auto">
                         {logs.map((log, index) => (

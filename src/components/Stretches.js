@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Flex, Heading, Text, Center, Button, ButtonGroup } from '@chakra-ui/react';
+import { Box, Heading, Text, Button, ButtonGroup } from '@chakra-ui/react';
 
 const Stretches = ({ onStretchButtonClick }) => {
     const [selectedStretch, setSelectedStretch] = useState(null);
@@ -55,7 +55,7 @@ const Stretches = ({ onStretchButtonClick }) => {
 
                     </Heading>
                 )}
-                <ButtonGroup>
+                <ButtonGroup gap ={2}>
                     <Button onClick={handleStretchButtonClick} colorScheme="green">
                         I did it!
                     </Button>

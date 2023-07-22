@@ -1,7 +1,5 @@
 import React from 'react';
 import { Box, Heading, Flex } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import { IconButton, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react';
 import HamburgerMenu from './HamburgerMenu';
 
 

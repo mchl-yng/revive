@@ -1,7 +1,6 @@
 import React from 'react';
-import { Box, Heading, Text, Button, Flex, Center, Image, ButtonGroup, Link } from '@chakra-ui/react';
+import { Box, Heading, Text, Button, Flex, Center, ButtonGroup, Link } from '@chakra-ui/react';
 import { Logo } from '../Logo';
-import img from '../logo.svg'
 
 const HeroSection = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ChakraProvider, theme, CSSReset, Box } from '@chakra-ui/react';
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import Landing from './components/Landing';
 import Dashboard from './components/Dashboard';
 import customTheme from './customTheme';

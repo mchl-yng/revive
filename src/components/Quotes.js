@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Heading, Text, Center, Button, ButtonGroup } from '@chakra-ui/react';
+import { Box, Heading, Text, Button, ButtonGroup } from '@chakra-ui/react';
 
 const Quotes = ({ onQuoteButtonClick }) => {
     const [quote, setQuote] = useState(null);
@@ -47,7 +47,7 @@ const Quotes = ({ onQuoteButtonClick }) => {
 
                 </Heading>
             )}
-            <ButtonGroup>
+            <ButtonGroup gap ="2">
                 <Button onClick={handleQuoteButtonClick} colorScheme="green">
                     I reflected!
                 </Button>
